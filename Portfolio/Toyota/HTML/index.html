@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="color-scheme" content="light dark">
    <meta name="supported-color-schemes" content="light dark">
+   <meta name="x-apple-disable-message-reformatting">
 	<title>HTML Email Template Boilerplate</title>
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -19,8 +20,20 @@
         
       }
 
+      .img-logo {
+         width: 100%;
+         /* margin: 10px; */
+         
+      }
+      /* .store-info{
+         color: #000!important;
+         padding: 0%;
+      } */
+      
+
+
       /* Custom Dark Mode Colors */
-      :root {
+      /* :root {
          color-scheme: light dark;
          supported-color-schemes: light dark;
       }
@@ -32,7 +45,7 @@
          .darkmode-transparent {
             background-color: transparent!important;
          }
-      }
+      } */
    </style>
    
 	<!--[if (gte mso 9)|(IE)]>
@@ -69,8 +82,8 @@
          <table align="center" style="border-spacing:0;color:#565656;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
 
 
-<!-- START FIRST TABLE ROW -->
-            <tr>
+<!-- START FIRST LOGO ROW -->
+            <!-- <tr>
                <td style="padding:0;">
                   <table width="100%" style="border-spacing:0;" role="presentation">
                   
@@ -86,8 +99,57 @@
 
                   </table>
                </td>
+            </tr> -->
+
+            <tr>
+               <td>
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                    
+                     <td class="img-logo" style="padding-left: 10px;width: 300px;max-width: 300px;">
+                        <a href="https://example.com" target="_blank"><img src="/Portfolio/Toyota/images/logo.png" alt="logo"></img></a>
+
+                     </td>
+                     
+                     <td class="img-logo" style="padding-right: 10px;width: 300px;max-width: 300px;">
+                        <a href="https://example.com" target="_blank"><img src="/Portfolio/Toyota/images/hartfordsuperstore.png" alt="hartfordsuperstore"></img></a>
+                     </td>
+                     
+                  </table>
+               </td>
             </tr>
 <!-- END FIRST TABLE ROW -->
+
+
+<!-- START SECOND ADDRESS ROW -->
+<tr>
+   <td>
+      <table style="border: 2px solid black;" role="presentation">
+         <tr class="store-info">
+            <td style="padding: 0;margin: 0;">
+            <h2 style="color: #000;">Hartford Toyota Superstore</h2>
+         </td>
+         </tr>
+         <table style="padding: 0;margin: 0;width: 0px;border: 2px solid black;" role="presentation">
+            <tr style="font-size: 13px;padding: 0;">
+            <td>
+               <p style="color:#000;padding: 0;border-spacing: 10px;margin: 0;width: 400px;border: 2px solid black;"">135 West Service Road, Hartford, CT 06120  |</p>
+            </td>
+            
+            <td>
+               <p style="padding: 0;margin: 0;width: 400px;border: 2px solid black;"><a href="tel:18008888888" style="text-decoration: none;color: #000;">1-860-278-5411</a></p>
+            </td>
+         </tr>
+            </table>
+      </table>
+   </td>
+</tr>
+
+<!-- END ADDRESS ROW -->
+
+<!-- START THIRD LINKS ROW -->
+
+<!-- END THIRD LINKS ROW -->
+
 
 
          </table>
